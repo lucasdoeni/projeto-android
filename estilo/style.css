@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Android-style';
-    src: url('/fontes/idroid.otf') format('opentype');
+    src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal; /* FONTE DO SITE DaFont */
 }
 
