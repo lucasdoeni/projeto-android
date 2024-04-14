@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* FONTE DO GOOGLE FONTS */
+
+@font-face {
+    font-family: 'Android';
+    src: url('/pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal; /* FONTE DO SITE DaFont */
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+:root { /* VAR para paleta de cores / Fontes */
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after { /* apos o clique vai acontecer algo */
+    content: '\00A0\1F517';
+    /* emoji nos links */   
+}
+
+p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /* recuo no inicio do paragrafo */
+    line-height: 1.2em; /* espaçamento entre linhas */
+}
+
+
+#h1primeiro {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    font-weight: normal; /* retirar negrito */
+}
+
+#h1p {
+    text-align: center;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3em;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5)); /* degrade */
+    padding: 5px;
+    margin-top: -21px;
+    margin-left: -8px;
+    margin-right: -8px;
+    color: white;
+}
+
+nav {
+    padding: 5px;
+}
+
+nav a {
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 1s; /* TEMPO DE TRANSIÇAO AO PASSAR O MAUSE*/
+}
+
+nav a:hover {
+    color: var(--cor4);
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+.li1, .li2, .li3, .li4  {
+    float: left;
+    display: block;
+    padding: 5px;
+}
+
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; /* Para a imagem nao ficar demasiadamente grande */
+    padding: 1px 10px 10px 10px;
+    box-shadow: 0px 0px 10px black; 
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+main a:hover {
+    text-decoration: underline; /* sublinhado */
+    color: var(--cor3);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.img3class {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1, h2 {
+    padding: 2px;
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent); /* degrade no titulo para a direita */
+    text-indent: 10px; /* espaço a esquerda do titulo */
+    border-radius: 10px;
+}
+
+#video {
+    background-color: var(--cor5);
+    padding: 10px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px black;
+    
+    padding-bottom: 40%; /* proporçao do video no campo */
+    position: relative; /* posiçao */
+}
+
+#video iframe {
+    position: absolute;
+    top: 9%; /* tamanho acima */
+    left: 13%; /* tamanho a esquerda */
+    width: 73%; /* largura */
+    height: 81%; /* altura */
+}
+
+#section2 {
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 1px 10px 10px 10px; 
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#section2aside {
+    background-color: var(--cor1);
+    margin: 10px;
+    padding: -1px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.37);
+}
+
+#section2aside p {
+    padding: 10px;
+}
+
+#section2aside p a {
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+#section2aside p a:hover {
+    text-decoration: underline;
+}
+
+#section2aside h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 1px 1px;
+    margin-top: -5px;
+}
+
+aside ul {
+    list-style-type: '\2714\00A0\00A0'; /* simb 2714 */
+    /* para mudar simbolo da lista */ 
+    /*00A0 é o espaço depois do simbolo */
+    
+    list-style-position: inside; 
+    /* para as bolinhas/check ficar dentro do espaço verde */
+    
+    columns: 2; 
+    /* dividir a lista em duas colunas */
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    margin: -8px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
