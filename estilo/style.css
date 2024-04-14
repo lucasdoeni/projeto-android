@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* FONTE DO GOOGLE FONTS */
 
 @font-face {
-    font-family: 'Android';
+    font-family: 'Android-style';
     src: url('/fontes/idroid.otf') format('opentype');
     font-weight: normal; /* FONTE DO SITE DaFont */
 }
@@ -22,7 +22,7 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;
+    --fonte-android: 'Android-style';
 }
 
 body {
