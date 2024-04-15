@@ -4,6 +4,7 @@
     font-family: 'Android-style';
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal; /* FONTE DO SITE DaFont */
+    /* As vezes pode demorar para o GitHub puxar a fonte. Nao esquecer de colocar ../ */
 }
 
 * {
