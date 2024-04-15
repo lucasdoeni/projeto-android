@@ -131,7 +131,7 @@ main img.img3class {
 
 main h1, h2 {
     padding: 2px;
-    font-family: var(--fonte-android);
+    font-family: cursive;
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), transparent); /* degrade no titulo para a direita */
     text-indent: 10px; /* espaço a esquerda do titulo */
