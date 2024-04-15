@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* FONTE DO GOOGLE FONTS */
 
-
+@font-face {
+    font-family: 'Android-style';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal; /* FONTE DO SITE DaFont */
+}
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -127,7 +131,7 @@ main img.img3class {
 
 main h1, h2 {
     padding: 2px;
-    font-family: cursive;
+    font-family: 'Android-style';
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), transparent); /* degrade no titulo para a direita */
     text-indent: 10px; /* espaço a esquerda do titulo */
