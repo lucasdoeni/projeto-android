@@ -22,7 +22,7 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: cursive;
+    --fonte-android: 'Android-style', cursive;
 }
 
 body {
